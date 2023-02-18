@@ -1,13 +1,22 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
+
+import App from './App';
+import CarsCard from './component/CarsCard';
+import Main from './component/Main';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <App />
+    <Main
+      name="Kirill"
+      pole="man"
+      url="https://jsonplaceholder.typicode.com/posts/1/comments"
+    />
+    <CarsCard />
   </React.StrictMode>
 );
 
